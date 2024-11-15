@@ -1,18 +1,40 @@
-{ "projects1": [
+{
+  "projects": [
     {
-        "id":1,
-        "title":"their project title 1",
-        "detail":"project detail 1"
+      "id": "3",
+      "title": "Their project title 3",
+      "detail": "project detail 3",
+      "completed": true
     },
     {
-        "id":2,
-        "title":"their project title 2",
-        "detail":"project detail 2"
+      "id": "4",
+      "title": "Their project title 4",
+      "detail": "project detail 4",
+      "completed": true
     },
     {
-        "id":3,
-        "title":"their project title 3",
-        "detail":"project detail 3"
+      "id": "5",
+      "title": "Their project title 5",
+      "detail": "project detail 5",
+      "completed": false
+    },
+    {
+      "id": "6",
+      "title": "Their project title 6",
+      "detail": "project detail 6",
+      "completed": false
+    },
+    {
+      "id": "2",
+      "title": "Their project title 2",
+      "detail": "project detail 2",
+      "completed": true
+    },
+    {
+      "id": "1",
+      "title": "Their project title 1",
+      "detail": "project detail 1",
+      "completed": true
     }
-] 
+  ]
 }

@@ -1,6 +1,9 @@
 <template>
+
   <div class="home">
-   <h2>hi there, this is HOME VIEW PAGE</h2>
+
+
+    <h1 class="title">All projects Home Page</h1>
 
    <div v-for="project in projects" :key="project.id">
       <Singleproject :project="project" @delete="deletePj" @complete="complete"></Singleproject>
@@ -51,3 +54,14 @@ export default {
   }
 }
 </script>
+
+<style>
+
+  .title {
+    color: brown;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+</style>

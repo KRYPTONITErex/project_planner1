@@ -1,11 +1,22 @@
 <template>
-  
 
-  <h1>APP . VUE LINK PR</h1>
+<Navbar></Navbar>
+
+<h1>APP . VUE LINK PR</h1>
 
   <router-view/>
 
 </template>
+
+<script>
+import Navbar from './components/Navbar.vue';
+
+  export default{
+    components: { Navbar }
+
+  }
+
+</script>
 
 <style>
 #app {

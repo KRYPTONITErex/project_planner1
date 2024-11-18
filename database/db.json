@@ -7,12 +7,6 @@
       "completed": true
     },
     {
-      "id": "4",
-      "title": "Their project title 4",
-      "detail": "project detail 4",
-      "completed": true
-    },
-    {
       "id": "5",
       "title": "Their project title 5",
       "detail": "project detail 5",
@@ -25,16 +19,28 @@
       "completed": false
     },
     {
-      "id": "2",
-      "title": "Their project title 2",
-      "detail": "project detail 2",
-      "completed": true
-    },
-    {
       "id": "1",
       "title": "Their project title 1",
       "detail": "project detail 1",
       "completed": true
+    },
+    {
+      "id": "cc30",
+      "title": "My Project 1",
+      "detail": "my project detail 1",
+      "completed": false
+    },
+    {
+      "id": "aefb",
+      "title": "Lwin Phyo project 1",
+      "detail": "May Yamin",
+      "completed": true
+    },
+    {
+      "id": "c6fb",
+      "title": "Lwin Phyo Main Project",
+      "detail": "Khain Zar Lwin",
+      "completed": false
     }
   ]
 }

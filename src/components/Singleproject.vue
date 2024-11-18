@@ -6,7 +6,11 @@
 
         <div class="ICON">
             <span class="material-icons" @click="deletePj">delete_sweep</span>
-            <span class="material-icons">drive_file_rename_outline</span>
+
+            <router-link :to="{name:'EditProject',params:{id:project.id}}">
+                <span class="material-icons" >drive_file_rename_outline</span>
+            </router-link>
+
             <span class="material-icons" @click="complete">how_to_reg</span>
         </div>
     </div>

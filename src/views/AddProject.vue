@@ -3,12 +3,12 @@
     <div class="add-project-page">
       <h1 class="title">Add Project Page</h1>
       
-        <form class="project-form">
+        <form v-on:submit.prevent="addProj" class="project-form">
             <label for="project-title" class="form-label">Project Title</label>
-            <input id="project-title" type="text" class="form-input" placeholder="Enter project title">
+            <input v-model="title" id="project-title" type="text" class="form-input" placeholder="Enter project title">
     
             <label for="project-details" class="form-label">Project Details</label>
-            <input id="project-details" type="text" class="form-input" placeholder="Enter project details">
+            <input v-model="detail" id="project-details" type="text" class="form-input" placeholder="Enter project details">
     
             <button type="submit" class="submit-button">Add Project</button>
         </form>
@@ -20,10 +20,40 @@
 <script>
   export default {
     name: 'AddProjectPage',
+    data(){
+        return{
+            title:"",
+            detail:""
+        }
+    },
+    methods: {
+        addProj(){
+            fetch("http://localhost:3000/projects",{
+                method:"POST",
+                headers:{
+                    "Content-Type":"application/json"
+                },
+                body:JSON.stringify(
+                    {
+                        title:this.title,
+                        detail:this.detail,
+                        completed: false
+                    }
+                )
+            })
+            .then(()=>{
+                this.$router.push("/")
+
+            })
+            .catch((err)=>{
+                console.log(err);
+            })
+        }
+    }
   };
 </script>
   
-<style scoped>
+<style>
   .add-project-page {
     max-width: 600px;
     margin: 0 auto;

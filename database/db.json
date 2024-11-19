@@ -1,45 +1,51 @@
 {
   "projects": [
     {
-      "id": "3",
-      "title": "Their project title 3",
-      "detail": "project detail 3",
-      "completed": true
-    },
-    {
-      "id": "5",
-      "title": "Their project title 5",
-      "detail": "project detail 5",
+      "id": "ffca",
+      "title": "Front End",
+      "detail": "Java Script",
       "completed": false
     },
     {
-      "id": "6",
-      "title": "Their project title 6",
-      "detail": "project detail 6",
+      "id": "e945",
+      "title": "Font End",
+      "detail": "Vue JS",
       "completed": false
     },
     {
-      "id": "1",
-      "title": "Their project title 1",
-      "detail": "project detail 1",
+      "id": "c9e3",
+      "title": "General",
+      "detail": "Git and Git Hub",
       "completed": true
     },
     {
-      "id": "cc30",
-      "title": "My Project 1",
-      "detail": "my project detail 1",
+      "id": "4754",
+      "title": "General ",
+      "detail": "CLI",
+      "completed": true
+    },
+    {
+      "id": "4206",
+      "title": "Database",
+      "detail": "MySQL",
+      "completed": true
+    },
+    {
+      "id": "5c48",
+      "title": "Database",
+      "detail": "AWS Database",
       "completed": false
     },
     {
-      "id": "aefb",
-      "title": "Lwin Phyo project 1",
-      "detail": "May Yamin",
-      "completed": true
+      "id": "781e",
+      "title": "Back End",
+      "detail": "Java SE",
+      "completed": false
     },
     {
-      "id": "c6fb",
-      "title": "Lwin Phyo Main Project",
-      "detail": "Khain Zar Lwin",
+      "id": "b7e1",
+      "title": "Back End",
+      "detail": "Java EE",
       "completed": false
     }
   ]

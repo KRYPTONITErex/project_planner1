@@ -8,7 +8,7 @@
             <label for="project-details" class="form-label">Project Details</label>
             <input v-model="detail" id="project-details" type="text" class="form-input" placeholder="Enter project details">
     
-            <button type="submit" class="submit-button">Update Project</button>
+            <button @click="updateproject" type="submit" class="submit-button">Update Project</button>
     </form>
 
 
@@ -39,6 +39,29 @@ export default {
         .catch((err)=>{
             console.log(err);
         })
+    },
+    methods: {
+        updateproject(){
+            // console.log("Hi")
+            fetch('http://localhost:3000/projects/'+this.id,{
+                method:'PATCH',
+                hearders:{
+                    'Content-Type':'application/json'
+                },
+                body:JSON.stringify(
+                    {
+                        title:this.title,
+                        detail:this.detail
+                    }
+                )
+            })
+            .then(()=>{
+                this.$router.push("/")
+            })
+            .catch((err)=>{
+                console.log(err)
+            })
+        }
     }
 
 }

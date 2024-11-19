@@ -2,29 +2,37 @@
 
   <div class="home">
 
+    <FilterNav @filterValue="current=$event" :current="current"></FilterNav>
+    {{ current }}
 
-    <h1 class="title">All projects Home Page</h1>
+    <h1 class="title">All projects Page</h1>
 
    <div v-for="project in projects" :key="project.id">
       <Singleproject :project="project" @delete="deletePj" @complete="complete"></Singleproject>
    </div>
 
   </div>
+
+ 
+
 </template>
 
 <script>
 
 
+import FilterNav from '../components/FilterNav'
 import Singleproject from '../components/Singleproject'
 export default {
   name: 'HomeView',
   components: {
+    FilterNav,
     Singleproject,
     
   },
   data(){
     return{
-      projects: [] //[{},{},{}]
+      projects: [], //[{},{},{}],
+      current: "all"
     }
   },
   mounted(){

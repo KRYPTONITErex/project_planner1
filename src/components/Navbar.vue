@@ -1,6 +1,6 @@
 <template>
     <nav class="main-nav">
-      <router-link to="/" class="nav-link">Project</router-link>
+      <router-link to="/" class="nav-link">Projects</router-link>
       <span class="separator">||</span>
       <router-link :to="{ name: 'AddProject' }" class="nav-link">Add Project</router-link>
     </nav>
@@ -40,7 +40,7 @@
     font-size: 14px;
   }
   .router-link-active {
-  color: #fcf2d6; /* Highlighted text color */
+  color: #fabb0e; /* Highlighted text color */
   font-weight: bold; /* Emphasize the active link */
   background-color: rgb(3, 125, 90);
   border-radius: 50px; /* Rounded corners for a smoother look */

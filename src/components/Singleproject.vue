@@ -89,7 +89,7 @@ export default {
 }
 
 .project.completed {
-    border-left: 15px solid rgba(219, 246, 12, 0.868);
+    border-left: 15px solid rgba(137, 222, 11, 0.868);
     /* background-color: rgb(18, 138, 130); */
     color: rgb(21, 103, 96);
     margin-left: 100px;
@@ -115,7 +115,5 @@ export default {
 span{
     cursor: pointer;
 }
-
-
 
 </style>

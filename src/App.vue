@@ -1,8 +1,6 @@
 <template>
 
-<Navbar></Navbar>
-
-<h1>APP . VUE LINK PR</h1>
+  <Navbar></Navbar>
 
   <router-view/>
 

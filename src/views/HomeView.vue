@@ -7,7 +7,7 @@
 
     <h1 class="title">All projects Page</h1>
 
-   <div v-for="project in projects" :key="project.id">
+   <div v-for="project in filteredProjects" :key="project.id">
       <Singleproject :project="project" @delete="deletePj" @complete="complete"></Singleproject>
    </div>
 
@@ -33,6 +33,21 @@ export default {
     return{
       projects: [], //[{},{},{}],
       current: "all"
+    }
+  },
+  computed:{
+    filteredProjects(){
+      if(this.current==="complete"){
+        return this.projects.filter((p)=>{
+          return p.completed
+        })
+      }
+      if(this.current==="ongoing"){
+        return this.projects.filter((p)=>{
+          return !p.completed
+        })
+      }
+      return this.projects
     }
   },
   mounted(){
